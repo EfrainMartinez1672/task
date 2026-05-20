@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: #1a1625; /* Morado oscuro profundo para el fondo */
+  color: #e2e8f0;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+header h1 {
+  color: #f3e8ff; /* Morado muy claro, casi blanco */
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+  background: #262135; /* Morado intermedio para el contenedor */
+  padding: 30px;
+  border-radius: 20px; /* Bordes más redondeados y humanos */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra suave para dar volumen */
+}
+
+/* Filtros con estilo de burbuja moderna */
+.filters {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.btnfilter {
+  background-color: #362f47;
+  color: #c084fc;
+  border: 1px solid #4c3f63;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btnfilter:hover {
+  background-color: #4c3f63;
+  color: #f3e8ff;
+  transform: translateY(-1px);
+}
+
+/* Formulario contenedor */
+.entry {
+  border: 1px solid #4c3f63;
+  background: #2d263f;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+.entry legend {
+  padding: 0 12px;
+  font-weight: 600;
+  color: #a855f7;
+  font-size: 0.95rem;
+}
+
+form {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.input {
+  flex: 1;
+  padding: 12px 16px;
+  background-color: #1e192b;
+  border: 1px solid #4c3f63;
+  border-radius: 12px;
+  color: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  border-color: #a855f7;
+}
+
+.submit {
+  background-color: #a855f7;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.submit:hover {
+  background-color: #c084fc;
+  transform: translateY(-1px);
+}
+
+/* Lista de notas */
+.list h2 {
+  font-size: 1.3rem;
+  color: #c084fc;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.listNotes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.liNote {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #2f2842;
+  padding: 16px;
+  border-radius: 14px;
+  border-left: 5px solid #6b21a8; /* Detalle morado en el borde */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.liNote:hover {
+  transform: translateX(4px); /* Animación sutil al pasar el cursor */
+}
+
+.textNotes {
+  flex: 1;
+  word-break: break-all;
+  padding: 4px 8px;
+  color: #f3e8ff;
+}
+
+.textNotes[contenteditable="true"] {
+  background-color: #1e192b;
+  border: 1px dashed #a855f7;
+  border-radius: 6px;
+  outline: none;
+}
+
+/* Botones de acción dentro de las notas */
+.btndelate, .btnedit, .btnstatus {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.btndelate {
+  background-color: #ef4444;
+  color: white;
+}
+
+.btndelate:hover {
+  background-color: #dc2626;
+}
+
+.btnedit {
+  background-color: #f59e0b;
+  color: #1a1625;
+}
+
+.btnedit:hover {
+  background-color: #d97706;
+}
+
+.btnstatus {
+  min-width: 110px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
